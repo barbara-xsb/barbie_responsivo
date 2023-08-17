@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+nav{
+    background: #e33fcd;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    /*font-weight: bold;*/ /*negrito*/
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-transform: uppercase; /**/
+}
+
+a.active,a:hover{
+    background: #961485;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+/*
+section{
+    background: url(img/barbie.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px);
+
+}
+*/
+
+main{
+  background-color: #ff86ef;
+}
+
+footer{
+    background-color: #e33fcd;
+    color: black;
+    border-top: 2px solid #961485;
+    text-align: center;
+    padding: 20px;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 27%;
+}
+
+.colunas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.info{
+    text-align: center;
+}
+
+footer a{
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ff86ef;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover,a.active{
+        background: none;
+        color:#961485
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
