@@ -153,4 +153,13 @@ footer a{
         left: 0;
     }
 
+     footer
+    {
+        background-color:#e33fcd;
+        width: 100%;
+        height: 40%;
+        position: absolute;
+
+    }
+
 }
